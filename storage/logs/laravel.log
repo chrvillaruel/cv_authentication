@@ -1,0 +1,1054 @@
+[2019-05-28 16:49:48] local.INFO: 347  
+[2019-05-29 10:12:14] local.ERROR: Undefined property: Illuminate\Http\JsonResponse::$id {"exception":"[object] (ErrorException(code: 0): Undefined property: Illuminate\\Http\\JsonResponse::$id at /Users/mdzainalabedin/laravel/padelmobile/app/Http/Controllers/HomePageController.php:26)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/padelmobile/app/Http/Controllers/HomePageController.php(26): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', '/Users/mdzainal...', 26, Array)
+#1 [internal function]: App\\Http\\Controllers\\HomePageController->getUpcomingMatches(Object(Illuminate\\Http\\Request))
+#2 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#3 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getUpcomingMatc...', Array)
+#4 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomePageController), 'getUpcomingMatc...')
+#5 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#6 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#7 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#13 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /Users/mdzainalabedin/laravel/padelmobile/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 /Users/mdzainalabedin/laravel/padelmobile/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/padelmobile/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#40 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#41 {main}
+"} 
+[2019-05-29 10:13:16] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:16] local.INFO: 176  
+[2019-05-29 10:13:16] local.INFO: 181  
+[2019-05-29 10:13:16] local.INFO: 177  
+[2019-05-29 10:13:16] local.INFO: 182  
+[2019-05-29 10:13:16] local.INFO: solution started  
+[2019-05-29 10:13:16] local.INFO: ====================  
+[2019-05-29 10:13:16] local.INFO: All are same  
+[2019-05-29 10:13:16] local.INFO: 176  
+[2019-05-29 10:13:16] local.INFO: 181  
+[2019-05-29 10:13:16] local.INFO: 177  
+[2019-05-29 10:13:16] local.INFO: 182  
+[2019-05-29 10:13:16] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:16] local.INFO: 178  
+[2019-05-29 10:13:16] local.INFO: 175  
+[2019-05-29 10:13:16] local.INFO: 179  
+[2019-05-29 10:13:16] local.INFO: 180  
+[2019-05-29 10:13:16] local.INFO: solution started  
+[2019-05-29 10:13:16] local.INFO: ====================  
+[2019-05-29 10:13:16] local.INFO: All are same  
+[2019-05-29 10:13:16] local.INFO: 178  
+[2019-05-29 10:13:16] local.INFO: 175  
+[2019-05-29 10:13:16] local.INFO: 179  
+[2019-05-29 10:13:16] local.INFO: 180  
+[2019-05-29 10:13:21] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:21] local.INFO: 176  
+[2019-05-29 10:13:21] local.INFO: 181  
+[2019-05-29 10:13:21] local.INFO: 177  
+[2019-05-29 10:13:21] local.INFO: 182  
+[2019-05-29 10:13:21] local.INFO: solution started  
+[2019-05-29 10:13:21] local.INFO: ====================  
+[2019-05-29 10:13:21] local.INFO: All are same  
+[2019-05-29 10:13:21] local.INFO: 176  
+[2019-05-29 10:13:21] local.INFO: 181  
+[2019-05-29 10:13:21] local.INFO: 177  
+[2019-05-29 10:13:21] local.INFO: 182  
+[2019-05-29 10:13:21] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:21] local.INFO: 178  
+[2019-05-29 10:13:21] local.INFO: 175  
+[2019-05-29 10:13:21] local.INFO: 179  
+[2019-05-29 10:13:21] local.INFO: 180  
+[2019-05-29 10:13:21] local.INFO: solution started  
+[2019-05-29 10:13:21] local.INFO: ====================  
+[2019-05-29 10:13:21] local.INFO: All are same  
+[2019-05-29 10:13:21] local.INFO: 178  
+[2019-05-29 10:13:21] local.INFO: 175  
+[2019-05-29 10:13:21] local.INFO: 179  
+[2019-05-29 10:13:21] local.INFO: 180  
+[2019-05-29 10:13:21] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:21] local.INFO: 176  
+[2019-05-29 10:13:21] local.INFO: 181  
+[2019-05-29 10:13:21] local.INFO: 177  
+[2019-05-29 10:13:21] local.INFO: 182  
+[2019-05-29 10:13:21] local.INFO: solution started  
+[2019-05-29 10:13:21] local.INFO: ====================  
+[2019-05-29 10:13:21] local.INFO: All are same  
+[2019-05-29 10:13:21] local.INFO: 176  
+[2019-05-29 10:13:21] local.INFO: 181  
+[2019-05-29 10:13:21] local.INFO: 177  
+[2019-05-29 10:13:21] local.INFO: 182  
+[2019-05-29 10:13:21] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:21] local.INFO: 178  
+[2019-05-29 10:13:21] local.INFO: 175  
+[2019-05-29 10:13:21] local.INFO: 179  
+[2019-05-29 10:13:21] local.INFO: 180  
+[2019-05-29 10:13:21] local.INFO: solution started  
+[2019-05-29 10:13:21] local.INFO: ====================  
+[2019-05-29 10:13:21] local.INFO: All are same  
+[2019-05-29 10:13:21] local.INFO: 178  
+[2019-05-29 10:13:21] local.INFO: 175  
+[2019-05-29 10:13:21] local.INFO: 179  
+[2019-05-29 10:13:21] local.INFO: 180  
+[2019-05-29 10:13:28] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:28] local.INFO: 176  
+[2019-05-29 10:13:28] local.INFO: 181  
+[2019-05-29 10:13:28] local.INFO: 177  
+[2019-05-29 10:13:28] local.INFO: 182  
+[2019-05-29 10:13:28] local.INFO: solution started  
+[2019-05-29 10:13:28] local.INFO: ====================  
+[2019-05-29 10:13:28] local.INFO: All are same  
+[2019-05-29 10:13:28] local.INFO: 176  
+[2019-05-29 10:13:28] local.INFO: 181  
+[2019-05-29 10:13:28] local.INFO: 177  
+[2019-05-29 10:13:28] local.INFO: 182  
+[2019-05-29 10:13:28] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:28] local.INFO: 178  
+[2019-05-29 10:13:28] local.INFO: 175  
+[2019-05-29 10:13:28] local.INFO: 179  
+[2019-05-29 10:13:28] local.INFO: 180  
+[2019-05-29 10:13:28] local.INFO: solution started  
+[2019-05-29 10:13:28] local.INFO: ====================  
+[2019-05-29 10:13:28] local.INFO: All are same  
+[2019-05-29 10:13:28] local.INFO: 178  
+[2019-05-29 10:13:28] local.INFO: 175  
+[2019-05-29 10:13:28] local.INFO: 179  
+[2019-05-29 10:13:28] local.INFO: 180  
+[2019-05-29 10:13:29] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:29] local.INFO: 176  
+[2019-05-29 10:13:29] local.INFO: 181  
+[2019-05-29 10:13:29] local.INFO: 177  
+[2019-05-29 10:13:29] local.INFO: 182  
+[2019-05-29 10:13:29] local.INFO: solution started  
+[2019-05-29 10:13:29] local.INFO: ====================  
+[2019-05-29 10:13:29] local.INFO: All are same  
+[2019-05-29 10:13:29] local.INFO: 176  
+[2019-05-29 10:13:29] local.INFO: 181  
+[2019-05-29 10:13:29] local.INFO: 177  
+[2019-05-29 10:13:29] local.INFO: 182  
+[2019-05-29 10:13:29] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:29] local.INFO: 178  
+[2019-05-29 10:13:29] local.INFO: 175  
+[2019-05-29 10:13:29] local.INFO: 179  
+[2019-05-29 10:13:29] local.INFO: 180  
+[2019-05-29 10:13:29] local.INFO: solution started  
+[2019-05-29 10:13:29] local.INFO: ====================  
+[2019-05-29 10:13:29] local.INFO: All are same  
+[2019-05-29 10:13:29] local.INFO: 178  
+[2019-05-29 10:13:29] local.INFO: 175  
+[2019-05-29 10:13:29] local.INFO: 179  
+[2019-05-29 10:13:29] local.INFO: 180  
+[2019-05-29 10:13:33] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:33] local.INFO: 176  
+[2019-05-29 10:13:33] local.INFO: 181  
+[2019-05-29 10:13:33] local.INFO: 177  
+[2019-05-29 10:13:33] local.INFO: 182  
+[2019-05-29 10:13:33] local.INFO: solution started  
+[2019-05-29 10:13:33] local.INFO: ====================  
+[2019-05-29 10:13:33] local.INFO: All are same  
+[2019-05-29 10:13:33] local.INFO: 176  
+[2019-05-29 10:13:33] local.INFO: 181  
+[2019-05-29 10:13:33] local.INFO: 177  
+[2019-05-29 10:13:33] local.INFO: 182  
+[2019-05-29 10:13:33] local.INFO: Bellow team ids has problems  
+[2019-05-29 10:13:33] local.INFO: 178  
+[2019-05-29 10:13:33] local.INFO: 175  
+[2019-05-29 10:13:33] local.INFO: 179  
+[2019-05-29 10:13:33] local.INFO: 180  
+[2019-05-29 10:13:33] local.INFO: solution started  
+[2019-05-29 10:13:33] local.INFO: ====================  
+[2019-05-29 10:13:33] local.INFO: All are same  
+[2019-05-29 10:13:33] local.INFO: 178  
+[2019-05-29 10:13:33] local.INFO: 175  
+[2019-05-29 10:13:33] local.INFO: 179  
+[2019-05-29 10:13:33] local.INFO: 180  
+[2019-05-30 22:12:01] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(98): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2019-05-30 22:13:00] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(81): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2019-05-30 22:13:29] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(81): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2019-05-30 22:13:58] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(81): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2019-05-30 22:14:33] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(81): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2019-05-31 10:18:30] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(75): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2019-05-31 14:01:17] local.ERROR: Wrong number of segments {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Wrong number of segments at /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:42)
+[stacktrace]
+#0 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php(27): Tymon\\JWTAuth\\Validators\\TokenValidator->validateStructure('asdadasd')
+#1 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/Token.php(32): Tymon\\JWTAuth\\Validators\\TokenValidator->check('asdadasd')
+#2 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(304): Tymon\\JWTAuth\\Token->__construct('asdadasd')
+#3 /Users/mdzainalabedin/laravel/logintut/vendor/tymon/jwt-auth/src/JWT.php(188): Tymon\\JWTAuth\\JWT->setToken('asdadasd')
+#4 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(223): Tymon\\JWTAuth\\JWT->parseToken()
+#5 /Users/mdzainalabedin/laravel/logintut/app/Http/Controllers/UserController.php(75): Illuminate\\Support\\Facades\\Facade::__callStatic('parseToken', Array)
+#6 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#7 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#8 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#9 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#10 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Route.php(169): Illuminate\\Routing\\Route->runController()
+#11 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(665): Illuminate\\Routing\\Route->run()
+#12 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#18 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#21 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#22 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#23 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#24 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#25 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/mdzainalabedin/laravel/logintut/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 /Users/mdzainalabedin/laravel/logintut/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 /Users/mdzainalabedin/laravel/logintut/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 /Users/mdzainalabedin/.composer/vendor/laravel/valet/server.php(147): require('/Users/mdzainal...')
+#46 {main}
+"} 
+[2020-04-21 12:03:20] local.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1041): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}('')
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap('', Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(764): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(646): Illuminate\\Container\\Container->build(Object(Closure))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(601): Illuminate\\Container\\Container->resolve('encrypter', Array)
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(734): Illuminate\\Container\\Container->make('encrypter', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\Foundation\\Application->make('encrypter')
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(828): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(646): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(601): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(734): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(140): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#42 {main}
+"} 
+[2020-04-21 12:03:20] local.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1041): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}('')
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap('', Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(24): Illuminate\\Encryption\\EncryptionServiceProvider->key(Array)
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(764): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(646): Illuminate\\Container\\Container->build(Object(Closure))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(601): Illuminate\\Container\\Container->resolve('encrypter', Array)
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(734): Illuminate\\Container\\Container->make('encrypter', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\Foundation\\Application->make('encrypter')
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(828): Illuminate\\Container\\Container->resolveClass(Object(ReflectionParameter))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->resolveDependencies(Array)
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(646): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(601): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(734): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(215): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(189): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#15 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#16 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#17 {main}
+"} 
+[2020-04-21 12:04:10] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flutter.users' doesn't exist (SQL: insert into `users` (`userName`, `firstName`, `lastName`, `email`, `password`, `phone`, `updated_at`, `created_at`) values (chan, chan, chan, chan@gmail.com, $2y$10$wTyMjieTkmRhyRukY5srBOySLGnCDeNT7oiLWMREaGQaX9tzTYA3e, 095564564, 2020-04-21 12:04:10, 2020-04-21 12:04:10)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flutter.users' doesn't exist (SQL: insert into `users` (`userName`, `firstName`, `lastName`, `email`, `password`, `phone`, `updated_at`, `created_at`) values (chan, chan, chan, chan@gmail.com, $2y$10$wTyMjieTkmRhyRukY5srBOySLGnCDeNT7oiLWMREaGQaX9tzTYA3e, 095564564, 2020-04-21 12:04:10, 2020-04-21 12:04:10)) at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'flutter.users' doesn't exist at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:452)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('insert into `us...', Array, Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `us...', Array)
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `us...', Array)
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2494): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `us...', Array, 'id')
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1283): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(787): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(752): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(615): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(755): Illuminate\\Database\\Eloquent\\Model->save()
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1041): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\User))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(756): tap(Object(App\\User), Object(Closure))
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1570): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1582): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#14 G:\\flutter_login_and_registration\\laravel_backend\\app\\Http\\Controllers\\UserController.php(20): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#15 [internal function]: App\\Http\\Controllers\\UserController->register(Object(Illuminate\\Http\\Request))
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('register', Array)
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'register')
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(665): Illuminate\\Routing\\Route->run()
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#51 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#52 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#53 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#54 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#55 {main}
+"} 
+[2020-04-21 12:04:18] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `us...', Array, Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(88): Illuminate\\Database\\Connection->statement('alter table `us...')
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(264): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(223): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 G:\\flutter_login_and_registration\\laravel_backend\\database\\migrations\\2014_10_12_000000_create_users_table.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(359): CreateUsersTable->up()
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(366): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(177): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(146): Illuminate\\Database\\Migrations\\Migrator->runUp('G:\\\\flutter_logi...', 1, false)
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(95): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(70): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(184): Illuminate\\Container\\Container->call(Array)
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Command\\Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(171): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2020-04-21 12:04:23] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `us...', Array, Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(88): Illuminate\\Database\\Connection->statement('alter table `us...')
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(264): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(223): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 G:\\flutter_login_and_registration\\laravel_backend\\database\\migrations\\2014_10_12_000000_create_users_table.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(359): CreateUsersTable->up()
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(366): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(177): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(146): Illuminate\\Database\\Migrations\\Migrator->runUp('G:\\\\flutter_logi...', 1, false)
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(95): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(70): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(184): Illuminate\\Container\\Container->call(Array)
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Command\\Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(171): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(199): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\FreshCommand.php(51): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\FreshCommand->handle()
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(184): Illuminate\\Container\\Container->call(Array)
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Command\\Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(171): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\FreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2020-04-21 12:05:06] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`)) at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `us...', Array, Object(Closure))
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `us...', Array, Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(88): Illuminate\\Database\\Connection->statement('alter table `us...')
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(264): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(223): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 G:\\flutter_login_and_registration\\laravel_backend\\database\\migrations\\2014_10_12_000000_create_users_table.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(359): CreateUsersTable->up()
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(366): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(177): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'up')
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(146): Illuminate\\Database\\Migrations\\Migrator->runUp('G:\\\\flutter_logi...', 1, false)
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(95): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(70): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(184): Illuminate\\Container\\Container->call(Array)
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Command\\Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(171): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(199): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\FreshCommand.php(51): Illuminate\\Console\\Command->call('migrate', Array)
+#23 [internal function]: Illuminate\\Database\\Console\\Migrations\\FreshCommand->handle()
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(184): Illuminate\\Container\\Container->call(Array)
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Command\\Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(171): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\FreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 {main}
+"} 
+[2020-04-21 12:05:48] local.ERROR: Class 'App\Providers\Schema' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\Schema' not found at G:\\flutter_login_and_registration\\laravel_backend\\app\\Providers\\AppServiceProvider.php:17)
+[stacktrace]
+#0 [internal function]: App\\Providers\\AppServiceProvider->boot()
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(794): Illuminate\\Container\\Container->call(Array)
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(777): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\AppServiceProvider))
+#7 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\AppServiceProvider), 16)
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(778): array_walk(Array, Object(Closure))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(206): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#13 G:\\flutter_login_and_registration\\laravel_backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2020-04-21 12:05:59] local.ERROR: Class 'App\Providers\Schema' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Providers\\Schema' not found at G:\\flutter_login_and_registration\\laravel_backend\\app\\Providers\\AppServiceProvider.php:17)
+[stacktrace]
+#0 [internal function]: App\\Providers\\AppServiceProvider->boot()
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(794): Illuminate\\Container\\Container->call(Array)
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(777): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\AppServiceProvider))
+#7 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\AppServiceProvider), 16)
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(778): array_walk(Array, Object(Closure))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(206): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#13 G:\\flutter_login_and_registration\\laravel_backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 {main}
+"} 
+[2020-04-21 12:06:17] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userName' in 'field list' (SQL: insert into `users` (`userName`, `firstName`, `lastName`, `email`, `password`, `phone`, `updated_at`, `created_at`) values (chan, chan, chan, chan@gmail.com, $2y$10$.bzsmo3uGwouMHPo7MsvfOAou0uiLuvn6FDjnSjC4ziJU/0YD89UO, 095564564, 2020-04-21 12:06:17, 2020-04-21 12:06:17)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userName' in 'field list' (SQL: insert into `users` (`userName`, `firstName`, `lastName`, `email`, `password`, `phone`, `updated_at`, `created_at`) values (chan, chan, chan, chan@gmail.com, $2y$10$.bzsmo3uGwouMHPo7MsvfOAou0uiLuvn6FDjnSjC4ziJU/0YD89UO, 095564564, 2020-04-21 12:06:17, 2020-04-21 12:06:17)) at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userName' in 'field list' at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:452)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('insert into `us...', Array, Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `us...', Array)
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `us...', Array)
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2494): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `us...', Array, 'id')
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1283): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(787): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(752): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(615): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(755): Illuminate\\Database\\Eloquent\\Model->save()
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1041): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\User))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(756): tap(Object(App\\User), Object(Closure))
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1570): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1582): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#14 G:\\flutter_login_and_registration\\laravel_backend\\app\\Http\\Controllers\\UserController.php(20): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#15 [internal function]: App\\Http\\Controllers\\UserController->register(Object(Illuminate\\Http\\Request))
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('register', Array)
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'register')
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(665): Illuminate\\Routing\\Route->run()
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#51 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#52 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#53 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#54 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#55 {main}
+"} 
+[2020-04-21 12:08:28] local.ERROR: Argument 2 passed to Lcobucci\JWT\Signer\Hmac::createHash() must be an instance of Lcobucci\JWT\Signer\Key, null given, called in G:\flutter_login_and_registration\laravel_backend\vendor\lcobucci\jwt\src\Signer\BaseSigner.php on line 34 {"userId":1,"email":"chan@gmail.com","exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 2 passed to Lcobucci\\JWT\\Signer\\Hmac::createHash() must be an instance of Lcobucci\\JWT\\Signer\\Key, null given, called in G:\\flutter_login_and_registration\\laravel_backend\\vendor\\lcobucci\\jwt\\src\\Signer\\BaseSigner.php on line 34 at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\lcobucci\\jwt\\src\\Signer\\Hmac.php:21)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\lcobucci\\jwt\\src\\Signer\\BaseSigner.php(34): Lcobucci\\JWT\\Signer\\Hmac->createHash('eyJ0eXAiOiJKV1Q...', NULL)
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\lcobucci\\jwt\\src\\Builder.php(240): Lcobucci\\JWT\\Signer\\BaseSigner->sign('eyJ0eXAiOiJKV1Q...', NULL)
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\Providers\\JWT\\Lcobucci.php(111): Lcobucci\\JWT\\Builder->sign(Object(Lcobucci\\JWT\\Signer\\Hmac\\Sha256), NULL)
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\Manager.php(84): Tymon\\JWTAuth\\Providers\\JWT\\Lcobucci->encode(Array)
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\JWT.php(78): Tymon\\JWTAuth\\Manager->encode(Object(Tymon\\JWTAuth\\Payload))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\JWT.php(90): Tymon\\JWTAuth\\JWT->fromSubject(Object(App\\User))
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\JWTAuth.php(54): Tymon\\JWTAuth\\JWT->fromUser(Object(App\\User))
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(223): Tymon\\JWTAuth\\JWTAuth->attempt(Array)
+#8 G:\\flutter_login_and_registration\\laravel_backend\\app\\Http\\Controllers\\UserController.php(30): Illuminate\\Support\\Facades\\Facade::__callStatic('attempt', Array)
+#9 G:\\flutter_login_and_registration\\laravel_backend\\app\\Http\\Controllers\\UserController.php(23): App\\Http\\Controllers\\UserController->login(Object(Illuminate\\Http\\Request))
+#10 [internal function]: App\\Http\\Controllers\\UserController->register(Object(Illuminate\\Http\\Request))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('register', Array)
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'register')
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#15 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(665): Illuminate\\Routing\\Route->run()
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#50 {main}
+"} 
+[2020-04-21 12:10:22] local.ERROR: Command "jwt:generate" is not defined.
+
+Did you mean one of these?
+    event:generate
+    jwt:secret
+    key:generate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"jwt:generate\" is not defined.
+
+Did you mean one of these?
+    event:generate
+    jwt:secret
+    key:generate at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php:632)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(226): Symfony\\Component\\Console\\Application->find('jwt:generate')
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 G:\\flutter_login_and_registration\\laravel_backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-04-21 12:10:39] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'chan@gmail.com' for key 'users_email_unique' (SQL: insert into `users` (`email`, `password`, `updated_at`, `created_at`) values (chan@gmail.com, $2y$10$UrqSQkb9zW8GpcWe9yHxsOH.G3Ryk9GDVkcDnFR3Ek8QYqiZBUzNS, 2020-04-21 12:10:39, 2020-04-21 12:10:39)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'chan@gmail.com' for key 'users_email_unique' (SQL: insert into `users` (`email`, `password`, `updated_at`, `created_at`) values (chan@gmail.com, $2y$10$UrqSQkb9zW8GpcWe9yHxsOH.G3Ryk9GDVkcDnFR3Ek8QYqiZBUzNS, 2020-04-21 12:10:39, 2020-04-21 12:10:39)) at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'chan@gmail.com' for key 'users_email_unique' at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('insert into `us...', Array, Object(Closure))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `us...', Array)
+#3 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `us...', Array)
+#4 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2494): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `us...', Array, 'id')
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1283): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(787): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(752): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(615): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(755): Illuminate\\Database\\Eloquent\\Model->save()
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1041): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\User))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(756): tap(Object(App\\User), Object(Closure))
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1570): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1582): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#14 G:\\flutter_login_and_registration\\laravel_backend\\app\\Http\\Controllers\\UserController.php(20): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#15 [internal function]: App\\Http\\Controllers\\UserController->register(Object(Illuminate\\Http\\Request))
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('register', Array)
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'register')
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(665): Illuminate\\Routing\\Route->run()
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#51 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#52 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#53 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#54 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#55 {main}
+"} 
+[2020-04-21 12:13:48] local.ERROR: Token Signature could not be verified. {"exception":"[object] (Tymon\\JWTAuth\\Exceptions\\TokenInvalidException(code: 0): Token Signature could not be verified. at G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\Providers\\JWT\\Lcobucci.php:137)
+[stacktrace]
+#0 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\Manager.php(101): Tymon\\JWTAuth\\Providers\\JWT\\Lcobucci->decode('eyJ0eXAiOiJKV1Q...')
+#1 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\JWT.php(200): Tymon\\JWTAuth\\Manager->decode(Object(Tymon\\JWTAuth\\Token))
+#2 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\tymon\\jwt-auth\\src\\JWTAuth.php(64): Tymon\\JWTAuth\\JWT->getPayload()
+#3 G:\\flutter_login_and_registration\\laravel_backend\\app\\Http\\Controllers\\UserController.php(75): Tymon\\JWTAuth\\JWTAuth->authenticate()
+#4 [internal function]: App\\Http\\Controllers\\UserController->getCurrentUser(Object(Illuminate\\Http\\Request))
+#5 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#6 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('getCurrentUser', Array)
+#7 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UserController), 'getCurrentUser')
+#8 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#9 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(665): Illuminate\\Routing\\Route->run()
+#10 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#16 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#19 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(642): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#20 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(608): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#21 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(597): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#22 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#23 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#24 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#41 G:\\flutter_login_and_registration\\laravel_backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#42 G:\\flutter_login_and_registration\\laravel_backend\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#43 G:\\flutter_login_and_registration\\laravel_backend\\server.php(21): require_once('G:\\\\flutter_logi...')
+#44 {main}
+"} 
